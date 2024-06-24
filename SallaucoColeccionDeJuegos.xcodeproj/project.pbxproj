@@ -14,6 +14,7 @@
 		ACAA47142C29F15200A145D7 /* SallaucoColeccionDeJuegos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACAA47122C29F15200A145D7 /* SallaucoColeccionDeJuegos.xcdatamodeld */; };
 		ACAA47162C29F15200A145D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACAA47152C29F15200A145D7 /* Assets.xcassets */; };
 		ACAA47192C29F15200A145D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAA47172C29F15200A145D7 /* LaunchScreen.storyboard */; };
+		ACAA47212C29FAFB00A145D7 /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA47202C29FAFB00A145D7 /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ACAA47152C29F15200A145D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACAA47182C29F15200A145D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACAA471A2C29F15200A145D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACAA47202C29FAFB00A145D7 /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				ACAA47172C29F15200A145D7 /* LaunchScreen.storyboard */,
 				ACAA471A2C29F15200A145D7 /* Info.plist */,
 				ACAA47122C29F15200A145D7 /* SallaucoColeccionDeJuegos.xcdatamodeld */,
+				ACAA47202C29FAFB00A145D7 /* JuegosViewController.swift */,
 			);
 			path = SallaucoColeccionDeJuegos;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAA47212C29FAFB00A145D7 /* JuegosViewController.swift in Sources */,
 				ACAA470E2C29F15200A145D7 /* ViewController.swift in Sources */,
 				ACAA470A2C29F15200A145D7 /* AppDelegate.swift in Sources */,
 				ACAA470C2C29F15200A145D7 /* SceneDelegate.swift in Sources */,
