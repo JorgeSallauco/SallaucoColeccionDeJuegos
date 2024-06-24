@@ -20,7 +20,7 @@
                     <navigationItem key="navigationItem" id="Wkk-j7-tIx">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="dvO-dY-4KH">
                             <connections>
-                                <segue destination="hcU-9V-0o4" kind="show" id="Or5-kR-Fli"/>
+                                <segue destination="hcU-9V-0o4" kind="show" identifier="juegoSegue" id="Or5-kR-Fli"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -69,13 +69,13 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRy-po-L3t">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRy-po-L3t">
                                 <rect key="frame" x="146" y="344" width="122" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="OUF-hm-h0T"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="119" id="SRB-LK-2XD"/>
                                     <constraint firstAttribute="height" constant="31" id="de6-Bl-xOW"/>
-                                    <constraint firstAttribute="width" constant="80" id="lRD-EX-sHi"/>
+                                    <constraint firstAttribute="width" constant="122" id="lRD-EX-sHi"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Agregar"/>
@@ -88,6 +88,18 @@
                                     <action selector="agregarTapped:" destination="hcU-9V-0o4" eventType="touchUpInside" id="Uux-2g-mYX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfN-pR-4rg">
+                                <rect key="frame" x="131" y="389" width="152" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="JmH-BD-qOi"/>
+                                    <constraint firstAttribute="width" constant="152" id="Ld0-Xf-WQO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="hcU-9V-0o4" eventType="touchUpInside" id="xST-d7-C3G"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IjO-tY-WSv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -97,10 +109,12 @@
                             <constraint firstItem="K2N-vr-1oB" firstAttribute="trailing" secondItem="peR-bj-9Wv" secondAttribute="trailing" id="Ocp-Bi-Www"/>
                             <constraint firstItem="peR-bj-9Wv" firstAttribute="centerX" secondItem="IjO-tY-WSv" secondAttribute="centerX" id="bER-eY-ycg"/>
                             <constraint firstItem="K2N-vr-1oB" firstAttribute="leading" secondItem="peR-bj-9Wv" secondAttribute="leading" id="gZC-JS-cQG"/>
+                            <constraint firstItem="pfN-pR-4rg" firstAttribute="centerX" secondItem="IjO-tY-WSv" secondAttribute="centerX" id="h2D-H3-JUs"/>
                             <constraint firstItem="HRy-po-L3t" firstAttribute="top" secondItem="peR-bj-9Wv" secondAttribute="bottom" constant="20" id="kJ3-yT-2ee"/>
                             <constraint firstItem="K2N-vr-1oB" firstAttribute="leading" secondItem="IjO-tY-WSv" secondAttribute="leading" constant="87" id="nDz-b6-EZr"/>
                             <constraint firstItem="HRy-po-L3t" firstAttribute="centerX" secondItem="IjO-tY-WSv" secondAttribute="centerX" id="oZk-xg-nQF"/>
                             <constraint firstItem="peR-bj-9Wv" firstAttribute="top" secondItem="K2N-vr-1oB" secondAttribute="bottom" constant="20" id="st7-7I-OCm"/>
+                            <constraint firstItem="pfN-pR-4rg" firstAttribute="top" secondItem="HRy-po-L3t" secondAttribute="bottom" constant="15" id="wSb-TE-oCj"/>
                             <constraint firstItem="K2N-vr-1oB" firstAttribute="centerX" secondItem="IjO-tY-WSv" secondAttribute="centerX" id="wx2-8o-F61"/>
                         </constraints>
                         <variation key="default">
@@ -126,6 +140,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="JuegoImageView" destination="K2N-vr-1oB" id="WPn-tL-WpF"/>
+                        <outlet property="agregarActualizarBoton" destination="HRy-po-L3t" id="nvS-bB-erV"/>
+                        <outlet property="eliminarBoton" destination="pfN-pR-4rg" id="tjm-2h-p2j"/>
                         <outlet property="tituloTextField" destination="peR-bj-9Wv" id="XtX-Ak-khg"/>
                     </connections>
                 </viewController>
